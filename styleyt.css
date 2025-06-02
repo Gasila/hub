@@ -1,0 +1,68 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: black;
+	color: white;
+	font-family: Arial, sans-serif;
+	text-align: center;
+}
+
+.perfil {
+	margin-top: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+}
+
+.perfil img {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	border: 3px solid white;
+}
+
+h1 {
+	font-size: 28px;
+}
+
+hr {
+	width: 80%;
+	margin: 30px auto;
+	border: 1px solid white;
+}
+
+.botoes-container {
+	background-image: url('sua_foto_de_fundo.jpg'); /* Substitua pelo caminho da imagem */
+	background-size: cover;
+	background-position: center;
+	padding: 40px 0;
+}
+
+.botoes-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 150px);
+	grid-gap: 20px;
+	justify-content: center;
+	padding: 20px;
+}
+
+.botao {
+	border: 2px solid red;
+	border-radius: 15px;
+	padding: 20px 0;
+	font-size: 20px;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.5);
+	transition: all 0.3s;
+}
+
+.botao:hover {
+	background-color: red;
+	color: black;
+	cursor: pointer;
+}
+
+a{
+	text-decoration: none;
+}

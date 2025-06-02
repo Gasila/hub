@@ -1,0 +1,86 @@
+body {
+	margin: 0;
+	background-color: black;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+
+.container {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+}
+
+.foto-centro {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 1;
+	border: 3px solid white;
+}
+
+.icon {
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	cursor: pointer;
+}
+
+.icon img {
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+}
+
+.arrow {
+	position: absolute;
+	width: 3px;
+	height: 0;
+	background: white;
+	transform-origin: top;
+	transition: height 0.3s ease;
+	z-index: 0;
+}
+
+.icon:hover .arrow {
+  height: 100px;
+}
+
+.youtube       { top: 10%;  left: 35%; } /* Posições específicas de cada ícone */
+.instagram     { top: 10%;  right: 35%; }
+.lista         { top: 40%;  left: 25%; }
+.links         { top: 40%;  right: 25%; }
+.twitch        { bottom: 10%; left: 35%; }
+.steam         { bottom: 10%; right: 35%; }
+
+
+.arrow-dinamica {
+	position: absolute;
+	width: 2px;
+	height: 0;
+	background: white;
+	transform-origin: top center;
+	transition: all 0.2s ease;
+	opacity: 0;
+	z-index: 0;
+	pointer-events: none;
+}
+
+.arrow-dinamica::after {
+	content: '';
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 14px;
+	height: 14px;
+	background: white;
+	clip-path: polygon(50% 100%, 0% 0%, 100% 0%);
+}
