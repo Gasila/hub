@@ -1,7 +1,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	background-color: black;
+	background-color: #071d42;
 	color: white;
 	font-family: Arial, sans-serif;
 	text-align: center;
@@ -65,4 +65,235 @@ hr {
 
 a{
 	text-decoration: none;
+}
+
+/*container
+
+
+.container {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container a{
+  text-decoration: none;
+}
+
+.card {
+  border: 4px solid darkorange;
+  border-radius: 5px;
+  padding: 20px;
+  width: 250px;
+  height: 350px;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  position: relative;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  opacity: 1;
+  transition: opacity 0.5s ease;
+  z-index: 0;
+}
+
+.card:hover::before {
+  opacity: 0;
+}
+
+.card * {
+  position: relative;
+  z-index: 1;
+}
+
+.card h2 {
+  margin-bottom: 10px;
+}
+
+
+.cardcanal {
+  background-image: url('game.jpg');
+}
+
+.cardplaylists {
+  background-image: url('news.jpg');
+}
+
+.cardtv{
+	background-image: url('wip.jpg');
+}
+
+.wip {
+  background-image: url('galeria/wip.jpg');
+}
+
+.icon {
+  font-size: 60px;
+}
+
+.texto-com-contorno {
+  color: white;
+  font-weight: bold;
+  text-shadow:
+    -2px -2px 0 black,
+     2px -2px 0 black,
+    -2px  2px 0 black,
+     2px  2px 0 black,
+    -2px  0px 0 black,
+     2px  0px 0 black,
+     0px -2px 0 black,
+     0px  2px 0 black;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+hr {
+  width: 80%;
+  border: none;
+  border-top: 3px solid white;
+  margin: 0 auto;
+}*/
+
+.grade {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	padding: 30px;
+	gap: 40px;
+	color: black;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+
+.intro {
+	margin-top: 10px;
+	font-size: 24px;
+	font-weight: bold;
+	background: #ffdd57;
+	padding: 5px 15px;
+	transform: skewX(-10deg);
+	box-shadow: 3px 3px black;
+}
+
+.games {
+	display: flex;
+	gap: 50px;
+}
+
+.games a{
+	color: black;
+	text-decoration: none;
+}
+
+.game-card {
+	background: black;
+	border: 2px solid #000;
+	width: 180px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.game-card img {
+	width: 100%;
+	height: 250px;
+	object-fit: cover;
+}
+
+.titulinho {
+	width: 100%;
+	background: #ffdd57;
+	text-align: center;
+	padding: 8px 0;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+
+/**/
+
+.game-card {
+	position: relative;
+	overflow: hidden;
+	width: 180px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: 2px solid #000;
+	background: black;
+}
+
+.game-card img {
+	width: 100%;
+	height: 250px;
+	object-fit: cover;
+	display: block;
+	transition: opacity 0.3s ease;
+}
+
+/* Imagem alternativa */
+.game-card::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 250px;
+	background-size: cover;
+	background-position: center;
+	opacity: 0;
+	transition: opacity 0.7s ease;
+	z-index: 1;
+}
+
+/* Hover ativa a imagem alternativa */
+.game-card:hover::before {
+	opacity: 1;
+}
+
+/* Garante que texto fique visível acima da imagem */
+.game-card .titulinho {
+	position: relative;
+	z-index: 2;
+	background: #ffdd57;
+	width: 100%;
+	text-align: center;
+	padding: 8px 0;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+/* Imagens hover simbólicas */
+.hover-ds::before {
+	background-image: url("galeria/ds2.jpg");
+}
+
+.hover-hyper::before {
+	background-image: url("galeria/drifter2.jpg");
+}
+
+.hover-ninja::before {
+	background-image: url("galeria/ninja2.jpg");
+}
+
+.hover-wip::before {
+	background-image: url("galeria/wip.jpg");
 }

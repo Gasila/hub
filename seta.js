@@ -29,7 +29,7 @@ const container = document.querySelector('.container');
   const angleMap = {
     youtube: 143,
     instagram: -145,
-    lista: 100,
+    lista: 95,
     twitch: 35,
     links: -97,
     steam: -35,
