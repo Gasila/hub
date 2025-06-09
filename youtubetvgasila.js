@@ -188,7 +188,7 @@ let player;
     }
 
     // Embaralha e seleciona 100
-    const shuffled = shuffleArray([...videoIds]).slice(0, 101);
+    const shuffled = shuffleArray([...videoIds]).slice(0, 100);
 
     const firstVideoId = 'yertDujkK1E'; // um vídeo seu com incorporação liberada
 	const playlist = shuffled; // resto da playlist aleatório
