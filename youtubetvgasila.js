@@ -7,7 +7,6 @@ let player;
     // Lista completa de IDs de vídeo do seu canal
     
 	const videoIds = [
-  'teste',
   'EC76S_3NZb4',
   'uB5gOCfFf5c',
   'K0KT_zflkXM',
@@ -86,7 +85,6 @@ let player;
   '2QDid0DO_wg',
   'ao7gsRZaFHo',
   'zWWnzSbVKvk',
-  'dBTLIKVo8pU',
   'nRQ8IS-owwk',
   'ur-V5yzVnLg',
   'eRlpBn2p-HQ',
@@ -100,7 +98,6 @@ let player;
   'w1apyFYyKCM',
   'Ff8ID1i9Ruo',
   'bG9GFcC2PcA',
-  '2tXn1DKFnwg',
   'pncPhu6_s9c',
   'BV35LtxVdZ0',
   'F3pXU_79Y3M',
