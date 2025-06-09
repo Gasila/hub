@@ -195,7 +195,7 @@ let player;
 
 
     player = new YT.Player('player', {
-      videoId: firstVideoId,
+      videoId: playlist,
       playerVars: {
         autoplay: 0,
         controls: 0,
