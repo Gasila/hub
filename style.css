@@ -1,5 +1,9 @@
 body {
 	margin: 0;
+	background-image: url('galeria/sky.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
 	background-color: black;
 	height: 100vh;
 	display: flex;

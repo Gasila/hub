@@ -1,9 +1,4 @@
-verificar ids de links quebrados na tv
 
 tentar fazer tv ao redor do vídeo
 
-refazer icone gamelist
-
 finalizar hub do youtube
-
-privar shorts e coletar ids de todos novamente e inserir no js
