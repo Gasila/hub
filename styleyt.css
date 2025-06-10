@@ -168,7 +168,7 @@ a{
 
 .container {
 	width: 100%;
-	max-width: 1200px;
+	max-width: 1600px;
 	background-color: black;
 	box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
 	background-image: url('galeria/wall.jpg');
@@ -192,7 +192,7 @@ a{
 	padding: 0px;
 	cursor: pointer;
 	border-radius: 5px;
-	border: 2px solid white;
+	border: 2px solid darkorange;
 }
 
 .playlist-container {
@@ -204,7 +204,7 @@ a{
 
 .video-screen {
 	width: 100%;
-	max-width: 800px;
+	max-width: 1000px;
 	aspect-ratio: 16 / 9;
 	margin-bottom: 40px;
 	border: 2px solid white;
@@ -220,7 +220,7 @@ a{
 }	
 
 .video-placeholder {
-	position: absolute;
+	position: relative;
 	z-index: 1;
 	padding: 20px;
 	color: white;
