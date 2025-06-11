@@ -188,7 +188,7 @@ a{
 }
 
 .container img{
-	width: 500px;
+	width: 350px;
 	padding: 0px;
 	cursor: pointer;
 	border-radius: 5px;
@@ -236,12 +236,4 @@ a{
 	gap: 20px;
 	justify-content: center; 
 	flex-wrap: wrap;
-
 }
-
-
-
-/*.playlist-container iframe{
-	border-radius: 5px;
-	border: 2px solid white;
-}*/
