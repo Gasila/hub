@@ -1,12 +1,11 @@
 let player;
 
-  function initPlayer() {
-    document.getElementById('startButton').style.display = 'none';
-    document.getElementById('player').style.display = 'block';
+function initPlayer() {
+  document.getElementById('startButton').style.display = 'none';
+  document.getElementById('player').style.display = 'block';
 
-    // Lista completa de IDs de vídeo do seu canal
-    
-	const videoIds = [
+  // ✅ Insira aqui os IDs dos seus vídeos:
+  const videoIds = [
   'EC76S_3NZb4',
   'uB5gOCfFf5c',
   'K0KT_zflkXM',
@@ -175,44 +174,49 @@ let player;
   'LhWeM1sGbkU',
   'GVftUlcqakM',
   'tcaU7ZLsETM',
-  'SMRQHajYotc'
-];
-	
+  'SMRQHajYotc',
+  'kQ66tdN-DrU',
+  '4YkZ6H-HEVo',
+  ];
 
-    // Função para embaralhar array
-    function shuffleArray(array) {
-      for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
-      }
-      return array;
+  // Embaralha a lista
+  function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
     }
+    return array;
+  }
 
-    // Embaralha e seleciona 100
-    const shuffled = shuffleArray([...videoIds]).slice(0, 100);
+  const shuffled = shuffleArray([...videoIds]).slice(0, 100);
+  const firstVideoId = shuffled[0];           // Primeiro vídeo sorteado
+  const playlist = shuffled.slice(1);         // Os 99 seguintes
 
-    const firstVideoId = 'yertDujkK1E'; // um vídeo seu com incorporação liberada
-	const playlist = shuffled; // resto da playlist aleatório
+  // Logs para diagnóstico
+  console.log("▶️ Vídeo inicial:", firstVideoId);
+  console.log("📺 Playlist (sem o primeiro):", playlist.length, "vídeos");
+  console.log("🆔 Todos os IDs:", [firstVideoId, ...playlist]);
+  
+  
 
-
-    player = new YT.Player('player', {
-      videoId: playlist,
-      playerVars: {
-        autoplay: 0,
-        controls: 0,
-        loop: 1,
-        modestbranding: 1,
-        rel: 0,
-        mute: 0,
-        playlist: playlist.join(',')
-      },
-      events: {
-        onReady: (event) => event.target.playVideo(),
-        onStateChange: (event) => {
-          if (event.data === YT.PlayerState.PAUSED) {
-            player.playVideo(); // impede pausar
-          }
+  player = new YT.Player('player', {
+    videoId: firstVideoId,
+    playerVars: {
+      autoplay: 0,
+      controls: 0,
+      loop: 1,
+      modestbranding: 1,
+      rel: 0,
+      mute: 0,
+      playlist: playlist.join(',') // os vídeos seguintes
+    },
+    events: {
+      onReady: (event) => event.target.playVideo(),
+      onStateChange: (event) => {
+        if (event.data === YT.PlayerState.PAUSED) {
+          player.playVideo();
         }
       }
-    });
-  }
+    }
+  });
+}
