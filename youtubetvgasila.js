@@ -179,6 +179,8 @@ function initPlayer() {
   '4YkZ6H-HEVo',
   'MsFoDO9HVgM',
   'Q3ExO_8D8Aw',
+  '5LJgT3malm8',
+  'T0bB_DreC7o'
   ];
 
   // Embaralha a lista
