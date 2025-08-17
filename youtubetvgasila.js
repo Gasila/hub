@@ -180,7 +180,10 @@ function initPlayer() {
   'MsFoDO9HVgM',
   'Q3ExO_8D8Aw',
   '5LJgT3malm8',
-  'T0bB_DreC7o'
+  'T0bB_DreC7o',
+  '-0Wl21NTq40',
+  'F5UuSMJabW0',
+  's-olNXxxiGo'
   ];
 
   // Embaralha a lista
