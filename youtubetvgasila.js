@@ -201,7 +201,8 @@ function initPlayer() {
   'VOX42Q8tj28',
   '2E602CC6U1I',
   'HcEauHng_ds',
-  'V6n1cpsh8S4'
+  'V6n1cpsh8S4',
+  'xuQYQKDIsRs'
   ];
 
   // Embaralha a lista
