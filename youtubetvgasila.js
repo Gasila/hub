@@ -202,7 +202,11 @@ function initPlayer() {
   '2E602CC6U1I',
   'HcEauHng_ds',
   'V6n1cpsh8S4',
-  'xuQYQKDIsRs'
+  'xuQYQKDIsRs',
+  'hMJA_YwyIro',
+  'sW3LVZo3BkY',
+  'iVW3SgMI-dY',
+  'PxiSPfq1LQA'
   ];
 
   // Embaralha a lista
