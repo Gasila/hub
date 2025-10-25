@@ -206,7 +206,8 @@ function initPlayer() {
   'hMJA_YwyIro',
   'sW3LVZo3BkY',
   'iVW3SgMI-dY',
-  'PxiSPfq1LQA'
+  'PxiSPfq1LQA',
+  'PYP-U_boV38'
   ];
 
   // Embaralha a lista
