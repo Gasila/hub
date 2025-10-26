@@ -207,7 +207,8 @@ function initPlayer() {
   'sW3LVZo3BkY',
   'iVW3SgMI-dY',
   'PxiSPfq1LQA',
-  'PYP-U_boV38'
+  'PYP-U_boV38',
+  'gwxeeUl3fW0'
   ];
 
   // Embaralha a lista
