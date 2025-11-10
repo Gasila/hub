@@ -208,7 +208,10 @@ function initPlayer() {
   'iVW3SgMI-dY',
   'PxiSPfq1LQA',
   'PYP-U_boV38',
-  'gwxeeUl3fW0'
+  'gwxeeUl3fW0',
+  'ADdQIC1tGdI',
+  'nnjHgv2PDg8',
+  '7psiM_ZURxk'
   ];
 
   // Embaralha a lista
