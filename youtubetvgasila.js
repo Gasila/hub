@@ -227,7 +227,8 @@ function initPlayer() {
   '3Tkmek3nu2k',
   'wMZxsW__zfg',
   'nsF26V0ZIeg',
-  'yEsg5xD1BMM'
+  'yEsg5xD1BMM',
+  'BQP-idQ_Lfk'
   ];
 
   // Embaralha a lista
