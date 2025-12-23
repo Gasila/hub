@@ -224,7 +224,10 @@ function initPlayer() {
   'oUxCL4p1M4E',
   '8GR142ToaRc',
   'gRZwPYjAJB0',
-  '3Tkmek3nu2k'
+  '3Tkmek3nu2k',
+  'wMZxsW__zfg',
+  'nsF26V0ZIeg',
+  'yEsg5xD1BMM'
   ];
 
   // Embaralha a lista
