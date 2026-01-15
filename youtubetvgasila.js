@@ -231,7 +231,8 @@ function initPlayer() {
   'BQP-idQ_Lfk',
   'QJjOu93S2g0',
   'Efjg5Pr4tx4',
-  'FNEpSqJFHiE'
+  'FNEpSqJFHiE',
+  'DS2ewa5fNjI'
   ];
 
   // Embaralha a lista
