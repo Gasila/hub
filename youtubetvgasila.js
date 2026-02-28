@@ -238,7 +238,8 @@ function initPlayer() {
   'cVW43aRjQdY',
   '_KeM7vMvXM8',
   'Cqnms6n-klQ',
-  'bIYh6EcrF_I'
+  'bIYh6EcrF_I',
+  '8t8f7q4l0vY'
   ];
 
   // Embaralha a lista
