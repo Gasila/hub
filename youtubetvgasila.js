@@ -245,7 +245,8 @@ function initPlayer() {
   'nKg_5Ozhb4Y',
   '9rOIGmrU6gQ',
   'qE8QuK_o90M',
-  'VjPt50Go618'
+  'VjPt50Go618',
+  '-_NJVq55Z7A'
   ];
 
   // Embaralha a lista
