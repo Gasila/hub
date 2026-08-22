@@ -275,7 +275,8 @@ function initPlayer() {
   'Jq0yPrJOjnw',
   'M2v8pl5eb0o',
   'UtOU4M1Fk2M',
-  'yN5xt34SOIA'
+  'yN5xt34SOIA',
+  'MSPimA7drvc'
   ];
 
   // Embaralha a lista
