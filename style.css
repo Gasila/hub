@@ -1,90 +1,444 @@
+/* Pré-Definição Geral */
 body {
-	margin: 0;
-	background-image: url('galeria/sky.png');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
 	background-color: black;
-	height: 100vh;
+	color: white;
+	font-family: "Times New Roman", sans-serif;
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
 	align-items: center;
-	overflow: hidden;
+	justify-content: center;
+	overflow-x: hidden;
+	margin: 0;
+	min-height: 100vh;
+	padding: 40px;
 }
 
 .container {
-	position: relative;
-	width: 100vw;
-	height: 100vh;
-}
-
-.foto-centro {
-	width: 150px;
-	height: 150px;
-	border-radius: 50%;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	z-index: 1;
-	border: 3px solid white;
-}
-
-.icon {
-	position: absolute;
-	width: 120px;
-	height: 120px;
-	cursor: pointer;
-}
-
-.icon img {
 	width: 100%;
-	height: 100%;
+	max-width: 1200px;
+	background-color: black;
+	padding: 10px;
+	border-radius: 20px;
+	box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+	border: 1px solid white;
+	background-image: url('./footage/wall.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.todososjogos{
+	margin: auto;
+	padding: 0px;
+	transform: translateX(1%);
+	width: 100%;
+	box-sizing: border-box;
+}
+
+img {
+	width: 100%;
+	height: auto;
 	border-radius: 10px;
+	transition: transform 0.2s;
+	display: block;
+	margin: 0 auto;       
 }
 
-.arrow {
-	position: absolute;
-	width: 3px;
-	height: 0;
-	background: white;
-	transform-origin: top;
-	transition: height 0.3s ease;
-	z-index: 0;
+img:hover {
+	transform: scale(1.05);
 }
 
-.icon:hover .arrow {
-  height: 100px;
+@keyframes autoScroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
-.youtube       { top: 10%;  left: 35%; } /* Posições específicas de cada ícone */
-.instagram     { top: 10%;  right: 35%; }
-.lista         { top: 40%;  left: 25%; }
-.links         { top: 40%;  right: 25%; }
-.twitch        { bottom: 10%; left: 35%; }
-.steam         { bottom: 10%; right: 35%; }
-
-
-.arrow-dinamica {
-	position: absolute;
-	width: 2px;
-	height: 0;
-	background: white;
-	transform-origin: top center;
-	transition: all 0.2s ease;
-	opacity: 0;
-	z-index: 0;
-	pointer-events: none;
+/* Cabeçalho */
+@keyframes colorpix{
+	0%
+	{
+		color: darkorange;
+	}
+	
+	20%
+	{
+		color: yellow;
+	}
+	
+	40%
+	{
+		color: green;
+	}
+	
+	60%
+	{
+		color: blue;
+	}
+	
+	80%
+	{
+		color: purple;
+	}
+	
+	100%
+	{
+		color: red;
+	}
 }
 
-.arrow-dinamica::after {
-	content: '';
-	position: absolute;
-	top: 100%;
-	left: 50%;
-	transform: translateX(-50%);
-	width: 14px;
-	height: 14px;
-	background: white;
-	clip-path: polygon(50% 100%, 0% 0%, 100% 0%);
+.cabecalho a{
+	
+	text-decoration: underline;
+	color: white;
+	
+	
+    /*background-image: linear-gradient(45deg, yellow, darkorange);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;*/
+}
+
+.cabecalho .pixons a{
+	
+	text-decoration: underline;
+	animation: colorpix infinite 2s;
+	color: white;
+	
+	
+    /*background-image: linear-gradient(45deg, yellow, darkorange);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;*/
+}
+
+.cabecalho a:after{
+	color: white;
+}
+
+.cabecalho pm{
+	color: green;
+}
+
+.cabecalho pz{
+	color: blue;
+}
+
+.cabecalho pd{
+	color: red;
+}
+
+.cabecalho pp{
+	color: orange;
+}
+
+.cabecalho creditos{
+	color: gray;
+}
+
+/* Jogos (JOGANDO) */
+.emjogo{
+	/*background-color: black;*/
+	color: white;
+	text-align: center;
+	margin: 40px auto 20px;
+	width: 90%;
+	padding: 20px;
+	box-sizing: border-box;
+	box-sizing: border-box;
+	border: 2px solid #24d654;
+	border-radius: 10px;
+	box-shadow: 0 0 10px #24d654;
+}
+
+.emjogotitulo{
+	margin: 0px;
+	float: left;
+	color: #24d654;
+}
+
+.emjogolista{
+	display: flex;
+	gap: 10px;
+	overflow-x: auto;
+	padding: 10px;
+	justify-content: left;
+	transform: translateX(1%);
+}
+
+.emjogo p{
+}
+
+.jogom {
+	flex: 0 0 auto;
+	width: 120px;
+}
+
+/* Jogos (ZERADOS) */
+
+.zerados{
+	/*background-color: black;*/
+	color: white;
+	text-align: center;
+	margin: 40px auto 20px;
+	width: 90%;
+	padding: 20px;
+	box-sizing: border-box;
+	border: 2px solid #03b1fc;
+	border-radius: 10px;
+	box-shadow: 0 0 10px #03b1fc;
+}
+
+.zeradostitulo{
+	margin: 0px;
+	margin-bottom: 10px;
+	float: left;
+	color: #03b1fc;
+}
+
+.zeradoslista{
+	display: flex;
+	gap: 10px;
+	overflow-x: auto;
+	padding: 10px;
+	justify-content: left;
+	transform: translateX(1%);
+}
+
+.zerados p{
+}
+
+.jogoz {
+	flex: 0 0 auto;
+	width: 120px;
+}
+
+/* Jogos (DROPADOS) */
+
+.dropados{
+	/*background-color: black;*/
+	color: white;
+	text-align: center;
+	margin: 40px auto 20px;
+	width: 90%;
+	padding: 20px;
+	box-sizing: border-box;
+	border: 2px solid #e61927;
+	border-radius: 10px;
+	box-shadow: 0 0 10px #e61927;
+}
+
+.dropadostitulo{
+	margin: 0px;
+	margin-bottom: 10px;
+	float: left;
+	color: #e61927;
+}
+
+.dropadoslista{
+	display: flex;
+	gap: 10px;
+	overflow-x: auto;
+	padding: 10px;
+	justify-content: left;
+	transform: translateX(1%);
+}
+
+.dropados p{
+}
+
+.jogod {
+	flex: 0 0 auto;
+	width: 120px;
+}
+
+/* Jogos (PENDENTES) */
+
+.pendentes{
+	/*background-color: black;*/
+	color: white;
+	text-align: center;
+	margin: 40px auto 20px;
+	width: 90%;
+	padding: 20px;
+	box-sizing: border-box;
+	border: 2px solid #fce10f;
+	border-radius: 10px;
+	box-shadow: 0 0 10px #fce10f;
+}
+
+.pendentestitulo{
+	margin: 0px;
+	margin-bottom: 10px;
+	float: left;
+	color: #fce10f;
+}
+
+.pendenteslista{
+	display: flex;
+	gap: 10px;
+	overflow-x: auto;
+	padding: 10px;
+	justify-content: left;
+	transform: translateX(1%);
+}
+
+.pendentes p{
+}
+
+.jogop {
+	flex: 0 0 auto;
+	width: 120px;
+}
+
+/* Jogos (GOTY) */
+
+.goty{
+	/*background-color: black;*/
+	color: white;
+	text-align: center;
+	margin: 0px auto;
+	width: 90%;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+.gotytitulo{
+	color: darkorange;
+}
+
+.gotylistascroll{
+	overflow-x: auto;
+}
+
+.gotylista{
+	display: inline-flex;
+	overflow-x: auto;
+	white-space: nowrap;	
+	margin: 0 auto;
+	gap: 10px;
+	overflow-x: auto;
+	padding: 10px;
+	justify-content: center;
+}
+
+.goty p{
+}
+
+.jogogoty {
+	flex: 0 0 auto;
+	width: 120px;
+	text-align: center;
+}
+
+/* Jogos (Favoritos) */
+
+.favoritos{
+	/*background-color: black;*/
+	color: white;
+	text-align: center;
+	margin: 0px auto;
+	width: 90%;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+.favoritostitulo{
+	color: white;
+}
+
+.favoritoslistascroll{
+	overflow-x: auto;
+	white-space: nowrap;
+}
+
+.favoritoslista{
+	display: inline-flex;
+	overflow-x: auto;
+	white-space: nowrap;	
+	margin: 0 auto;
+	gap: 10px;
+	overflow-x: auto;
+	padding: 10px;
+	justify-content: center;
+	animation: colorpix infinite 2s;
+}
+.favoritos p{
+}
+
+.jogofavoritos {
+	flex: 0 0 auto;
+	width: 120px;
+	text-align: center;
+}
+
+/* Barra de Pesquisa */
+
+#searchInput {
+	width: 100%;
+	max-width: 400px;
+	padding: 10px 40px 10px 16px;
+	border: 2px solid #444;
+	border-radius: 30px;
+	font-size: 16px;
+	background-color: #1e1e1e;
+	color: white;
+	outline: none;
+	transition: 0.3s ease;
+	background-image: url('./footage/lupa2.png');
+	background-size: 20px;
+	background-repeat: no-repeat;
+	background-position: right 12px center;
+}
+
+#searchInput:focus {
+	border-color: white;
+	box-shadow: 0 0 15px white;
+}
+
+
+/* Social */
+
+.social{
+	display: flex;
+    justify-content: center; /* centraliza horizontalmente */
+    align-items: center;     /* centraliza verticalmente */
+    gap: 30px; 
+}
+
+.social img{
+	float: left;
+	width: 100px;
+	margin: 40px auto 20px;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	overflow-x: hidden;
+	margin: 0;
+}
+
+/* Botão Topo */
+
+.topasso {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 50%;
+  font-size: 24px;
+  text-decoration: bold;
+  filter: grayscale(100%) contrast(2);
+}
+
+.topasso a {
+  color: white;
+  text-decoration: none;
+  display: block;
 }
