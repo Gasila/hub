@@ -279,7 +279,8 @@ function initPlayer() {
   'MSPimA7drvc',
   '3fTH3cplac4',
   '1b2eAFfHFgQ',
-  'QIqHV4DLvKo'
+  'QIqHV4DLvKo',
+  'MjNV1NWQ_ao'
   ];
 
   // Embaralha a lista
