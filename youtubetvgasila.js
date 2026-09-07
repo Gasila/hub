@@ -281,7 +281,9 @@ function initPlayer() {
   '1b2eAFfHFgQ',
   'QIqHV4DLvKo',
   'MjNV1NWQ_ao',
-  'qN5RnjJxubE'
+  'qN5RnjJxubE',
+  '0NMWVu-an7g',
+  'rlbV3FJ7E4I'
   ];
 
   // Embaralha a lista
